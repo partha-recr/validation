@@ -1,0 +1,7 @@
+---
+applications:
+- name: validation-service
+  memory: 1G  
+  path: target/validation.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  
