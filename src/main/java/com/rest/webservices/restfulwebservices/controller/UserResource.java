@@ -1,4 +1,4 @@
-package com.rest.webservices.restfulwebservices.user;
+package com.rest.webservices.restfulwebservices.controller;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -19,6 +19,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import com.rest.webservices.restfulwebservices.exception.UserNotFoundException;
+import com.rest.webservices.restfulwebservices.model.User;
+import com.rest.webservices.restfulwebservices.services.UserDaoService;
 
 @RestController
 public class UserResource {

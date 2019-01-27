@@ -1,5 +1,5 @@
 
-package com.rest.webservices.restfulwebservices.user;
+package com.rest.webservices.restfulwebservices.model;
 
 import java.util.Date;
 
